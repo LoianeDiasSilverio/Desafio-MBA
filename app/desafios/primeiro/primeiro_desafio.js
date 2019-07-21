@@ -9,7 +9,7 @@ class PrimeiroDesafio extends Component {
   };
 
   render() {
-    return <PrimeiroDesafioRender {...this.state} navegar={this.navegar} />;
+    return <PrimeiroDesafioRender {...this.state} navegar={this.navegar}/>;
     
   }
 }

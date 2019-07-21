@@ -2,37 +2,33 @@ import { StyleSheet, Dimensions } from "react-native";
 
 const Styles = StyleSheet.create({
   container: {
-    flex: 1
-  },
-  linearGradient: {
     flex: 1,
-    paddingLeft: 15,
-    paddingRight: 15
+    flexDirection: "column",
+    backgroundColor: "black"
   },
-  contentContainer: {
-    width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height
+  preview: {
+    flex: 1,
+    justifyContent: "flex-end",
+    alignItems: "center"
   },
-  card: {
-    marginTop: 10,
-    backgroundColor: "#FB6849",
-    width: Dimensions.get("window").width - 30,
-    padding: 20,
-    borderRadius: 4
+  buttonContainer: {
+    flex: 0,
+    flexDirection: "row",
+    justifyContent: "center"
   },
-  title: {
-    color: "#FB6849",
-    marginTop: 50,
-    padding: 10,
-    textAlign: "center",
-    fontSize: 30,
-    lineHeight: 30
+  capture: {
+    flex: 0,
+    backgroundColor: "#fff",
+    borderRadius: 5,
+    padding: 15,
+    paddingHorizontal: 20,
+    alignSelf: "center",
+    margin: 20
   },
-  text: {
-    color: "#FFFFFF",
-    textAlign: "center",
-    fontSize: 20
+  buttonText: {
+    fontSize: 14
   }
+  
 });
 
 
