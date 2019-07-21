@@ -3,14 +3,18 @@ import PrimeiroDesafioRender from "./primeiro_desafio_render";
 
 class PrimeiroDesafio extends Component {
 
-  navegar = () => {
+  navegarCamera = () => {
     const { navigation } = this.props;
-    navigation.navigate("PrimeiroDesafio");
+    navigation.navigate("Camera");
+  };
+
+  navegarGaleriaUpload = () => {
+    const { navigation } = this.props;
+    navigation.navigate("GaleriaUpload");
   };
 
   render() {
-    return <PrimeiroDesafioRender {...this.state} navegar={this.navegar}/>;
-    
+    return <PrimeiroDesafioRender {...this.state} navegarCamera={this.navegarCamera} navegarGaleriaUpload={this.navegarGaleriaUpload}/>;
   }
 }
 

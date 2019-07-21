@@ -6,6 +6,8 @@ import PrimeiroDesafio from '../desafios/primeiro/primeiro_desafio';
 import SegundoDesafio from '../desafios/segundo/segundo_desafio';
 import TerceiroDesafio from '../desafios/terceiro/terceiro_desafio';
 import QuartoDesafio from '../desafios/quarto/quarto_desafio';
+import Camera from '../utils/camera/camera_render';
+import GaleriaUpload from '../utils/galeria-upload/galeria_upload_render';
 import Alerts from '../utils/msgs';
 
 const Routes = createStackNavigator(
@@ -24,6 +26,12 @@ const Routes = createStackNavigator(
     },
     QuartoDesafio: {
       screen: QuartoDesafio
+    },
+    Camera: {
+      screen: Camera
+    },
+    GaleriaUpload: {
+      screen: GaleriaUpload
     },
     Temas: {
       screen: Temas
